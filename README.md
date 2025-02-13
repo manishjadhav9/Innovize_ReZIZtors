@@ -89,6 +89,12 @@ The system consists of the following smart contracts:
   - `verifyOwnership`: Verifies copyright ownership.
   - `transferCopyright`: Transfers copyright ownership.
 
+### 7. **Lock.sol**
+- **Purpose**: A simple time-locked contract that restricts withdrawals until a specified unlock time.
+- **Key Functions**:
+  - `constructor(uint _unlockTime)`: Initializes the contract with an unlock time and sets the contract owner.
+  - `withdraw()`: Allows the owner to withdraw funds after the unlock time has passed.
+
 ---
 
 ## 6. Project Structure
