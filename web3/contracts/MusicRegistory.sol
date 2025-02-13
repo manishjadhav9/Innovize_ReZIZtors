@@ -18,7 +18,6 @@ contract MusicRegistry is Ownable {
 
     // Constructor to initialize the contract with an initial owner
     constructor(address initialOwner) Ownable(initialOwner) {
-        // You can add additional initialization logic here if needed
     }
 
     function registerMusic(string memory title, string memory artist, string memory hash) public onlyOwner {
