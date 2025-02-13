@@ -91,7 +91,27 @@ The system consists of the following smart contracts:
 
 ---
 
-## 6. Tech Stack
+## 6. Project Structure
+
+### 6.1. Paths
+- **Smart Contracts**: All Solidity smart contracts are stored in the `web3/contracts/` directory.
+- **Tests**: Unit and integration tests are located in the `web3/test/` directory.
+- **Scripts**: Deployment and utility scripts are stored in the `web3/scripts/` directory.
+
+### 6.2. Artifacts Folder
+The `artifacts/` folder contains the compiled and tested output files of your Solidity contracts. This includes:
+- **ABI (Application Binary Interface)**: JSON files that describe the contract's interface.
+- **Bytecode**: The compiled bytecode of the contracts, ready for deployment.
+- **Metadata**: Additional information about the contracts, such as source code hashes.
+
+To generate the artifacts, run the following command:
+```sh
+npx hardhat compile
+```
+
+---
+
+## 7. Tech Stack
 
 | Technology       | Description                                           | Icon |
 |-----------------|-------------------------------------------------------|------|
@@ -106,7 +126,7 @@ The system consists of the following smart contracts:
 | **Polygon**     | Layer 2 scaling solution for Ethereum.                 | ![Polygon](https://img.shields.io/badge/-Polygon-8247E5?logo=polygon&logoColor=white) |
 | **Tailwind CSS**| A utility-first CSS framework for styling.             | ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white) |
 
+---
 
-
-## 7. Workflow Flowchart
+## 8. Workflow Flowchart
 ![flowchart](https://github.com/user-attachments/assets/462a59c0-caec-4650-9bb4-a0c08450cef4)
